@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B501DBE82C7F12AC0090BB98 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B501DBE42C7F12AC0090BB98 /* Inter-Bold.otf */; };
+		B501DBE92C7F12AC0090BB98 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B501DBE52C7F12AC0090BB98 /* Inter-Regular.otf */; };
+		B501DBEA2C7F12AC0090BB98 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B501DBE62C7F12AC0090BB98 /* Inter-Medium.otf */; };
+		B501DBEB2C7F12AC0090BB98 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B501DBE72C7F12AC0090BB98 /* Inter-SemiBold.otf */; };
+		B501DBEF2C7F14C40090BB98 /* transactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */; };
+		B501DBF02C7F14C40090BB98 /* transactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBED2C7F14C40090BB98 /* transactionTableViewCell.swift */; };
+		B501DBF22C7F19E70090BB98 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBF12C7F19E70090BB98 /* Transaction.swift */; };
 		B5D7C8042C7D88F500C5BE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8032C7D88F500C5BE45 /* AppDelegate.swift */; };
 		B5D7C8062C7D88F500C5BE45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8052C7D88F500C5BE45 /* SceneDelegate.swift */; };
-		B5D7C8082C7D88F500C5BE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8072C7D88F500C5BE45 /* ViewController.swift */; };
 		B5D7C80B2C7D88F500C5BE45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C80A2C7D88F500C5BE45 /* Base */; };
 		B5D7C80D2C7D88F600C5BE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C80C2C7D88F600C5BE45 /* Assets.xcassets */; };
 		B5D7C8102C7D88F600C5BE45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C80F2C7D88F600C5BE45 /* Base */; };
 		B5D7C81B2C7D88F600C5BE45 /* DviveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C81A2C7D88F600C5BE45 /* DviveTests.swift */; };
 		B5D7C8252C7D88F600C5BE45 /* DviveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8242C7D88F600C5BE45 /* DviveUITests.swift */; };
 		B5D7C8272C7D88F600C5BE45 /* DviveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8262C7D88F600C5BE45 /* DviveUITestsLaunchTests.swift */; };
+		B5D7C8352C7D897400C5BE45 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8342C7D897400C5BE45 /* DashboardVC.swift */; };
+		B5D7C8392C7D89BF00C5BE45 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8382C7D89BF00C5BE45 /* TopBar.swift */; };
+		B5D7C83B2C7D89EA00C5BE45 /* TopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C83A2C7D89EA00C5BE45 /* TopBar.xib */; };
+		B5D7C83D2C7D8AF000C5BE45 /* DeviceVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C83C2C7D8AF000C5BE45 /* DeviceVariants.swift */; };
+		B5D7C83F2C7D8B1D00C5BE45 /* Other+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C83E2C7D8B1D00C5BE45 /* Other+Extensions.swift */; };
+		B5D7C8522C7D9A7700C5BE45 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8512C7D9A7700C5BE45 /* Fonts.swift */; };
+		B5D7C85D2C7D9B7600C5BE45 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8532C7D9B7600C5BE45 /* Ubuntu-Bold.ttf */; };
+		B5D7C85E2C7D9B7600C5BE45 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8542C7D9B7600C5BE45 /* Ubuntu-BoldItalic.ttf */; };
+		B5D7C85F2C7D9B7600C5BE45 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8552C7D9B7600C5BE45 /* Ubuntu-Italic.ttf */; };
+		B5D7C8602C7D9B7600C5BE45 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8562C7D9B7600C5BE45 /* Ubuntu-Light.ttf */; };
+		B5D7C8612C7D9B7600C5BE45 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8572C7D9B7600C5BE45 /* Ubuntu-LightItalic.ttf */; };
+		B5D7C8622C7D9B7600C5BE45 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8582C7D9B7600C5BE45 /* Ubuntu-Medium.ttf */; };
+		B5D7C8632C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8592C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf */; };
+		B5D7C8642C7D9B7600C5BE45 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C85A2C7D9B7600C5BE45 /* Ubuntu-Regular.ttf */; };
+		B5D7C8652C7D9B7600C5BE45 /* UFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C85B2C7D9B7600C5BE45 /* UFL.txt */; };
+		B5D7C8672C7DA71B00C5BE45 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8662C7DA71B00C5BE45 /* Helper.swift */; };
+		B5D7C86D2C7DB42D00C5BE45 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C86C2C7DB42D00C5BE45 /* Currency.swift */; };
+		B5D7C8732C7DB6F400C5BE45 /* CurrencyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C8722C7DB6F400C5BE45 /* CurrencyCollectionViewCell.xib */; };
+		B5D7C8742C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8712C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift */; };
+		B5D7C8792C7DBFC700C5BE45 /* DashboardVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8782C7DBFC700C5BE45 /* DashboardVC+Delegate.swift */; };
+		B5D7C87B2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C87A2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift */; };
+		B5D7C87F2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C87E2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.xib */; };
+		B5D7C8802C7DD93500C5BE45 /* addCurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C87D2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +65,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B501DBE42C7F12AC0090BB98 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		B501DBE52C7F12AC0090BB98 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		B501DBE62C7F12AC0090BB98 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		B501DBE72C7F12AC0090BB98 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		B501DBED2C7F14C40090BB98 /* transactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionTableViewCell.swift; sourceTree = "<group>"; };
+		B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transactionTableViewCell.xib; sourceTree = "<group>"; };
+		B501DBF12C7F19E70090BB98 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		B5D7C8002C7D88F500C5BE45 /* Dvive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dvive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C8032C7D88F500C5BE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5D7C8052C7D88F500C5BE45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5D7C8072C7D88F500C5BE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5D7C80A2C7D88F500C5BE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5D7C80C2C7D88F600C5BE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D7C80F2C7D88F600C5BE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +84,29 @@
 		B5D7C8202C7D88F600C5BE45 /* DviveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DviveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C8242C7D88F600C5BE45 /* DviveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DviveUITests.swift; sourceTree = "<group>"; };
 		B5D7C8262C7D88F600C5BE45 /* DviveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DviveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5D7C8342C7D897400C5BE45 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		B5D7C8382C7D89BF00C5BE45 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		B5D7C83A2C7D89EA00C5BE45 /* TopBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBar.xib; sourceTree = "<group>"; };
+		B5D7C83C2C7D8AF000C5BE45 /* DeviceVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVariants.swift; sourceTree = "<group>"; };
+		B5D7C83E2C7D8B1D00C5BE45 /* Other+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other+Extensions.swift"; sourceTree = "<group>"; };
+		B5D7C8512C7D9A7700C5BE45 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B5D7C8532C7D9B7600C5BE45 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		B5D7C8542C7D9B7600C5BE45 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B5D7C8552C7D9B7600C5BE45 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		B5D7C8562C7D9B7600C5BE45 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		B5D7C8572C7D9B7600C5BE45 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		B5D7C8582C7D9B7600C5BE45 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		B5D7C8592C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B5D7C85A2C7D9B7600C5BE45 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		B5D7C85B2C7D9B7600C5BE45 /* UFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UFL.txt; sourceTree = "<group>"; };
+		B5D7C8662C7DA71B00C5BE45 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B5D7C86C2C7DB42D00C5BE45 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		B5D7C8712C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5D7C8722C7DB6F400C5BE45 /* CurrencyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5D7C8782C7DBFC700C5BE45 /* DashboardVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+Delegate.swift"; sourceTree = "<group>"; };
+		B5D7C87A2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+Datasource.swift"; sourceTree = "<group>"; };
+		B5D7C87D2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5D7C87E2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addCurrencyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B501DBEC2C7F149B0090BB98 /* transactionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B501DBED2C7F14C40090BB98 /* transactionTableViewCell.swift */,
+				B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */,
+			);
+			path = transactionTableViewCell;
+			sourceTree = "<group>";
+		};
 		B5D7C7F72C7D88F500C5BE45 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +166,18 @@
 		B5D7C8022C7D88F500C5BE45 /* Dvive */ = {
 			isa = PBXGroup;
 			children = (
+				B5D7C86E2C7DB6C300C5BE45 /* xib */,
+				B5D7C86B2C7DB41E00C5BE45 /* Model */,
+				B5D7C8362C7D899D00C5BE45 /* Utility */,
+				B5D7C8332C7D891E00C5BE45 /* View Controllers */,
 				B5D7C8032C7D88F500C5BE45 /* AppDelegate.swift */,
 				B5D7C8052C7D88F500C5BE45 /* SceneDelegate.swift */,
-				B5D7C8072C7D88F500C5BE45 /* ViewController.swift */,
 				B5D7C8092C7D88F500C5BE45 /* Main.storyboard */,
 				B5D7C80C2C7D88F600C5BE45 /* Assets.xcassets */,
 				B5D7C80E2C7D88F600C5BE45 /* LaunchScreen.storyboard */,
 				B5D7C8112C7D88F600C5BE45 /* Info.plist */,
+				B5D7C8682C7DAC5300C5BE45 /* Inter */,
+				B5D7C85C2C7D9B7600C5BE45 /* Ubuntu */,
 			);
 			path = Dvive;
 			sourceTree = "<group>";
@@ -125,6 +197,125 @@
 				B5D7C8262C7D88F600C5BE45 /* DviveUITestsLaunchTests.swift */,
 			);
 			path = DviveUITests;
+			sourceTree = "<group>";
+		};
+		B5D7C8332C7D891E00C5BE45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8772C7DBFAF00C5BE45 /* Dashboard */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5D7C8362C7D899D00C5BE45 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8502C7D9A6800C5BE45 /* Custom Fonts */,
+				B5D7C8372C7D89A600C5BE45 /* Custom Views */,
+				B5D7C83C2C7D8AF000C5BE45 /* DeviceVariants.swift */,
+				B5D7C83E2C7D8B1D00C5BE45 /* Other+Extensions.swift */,
+				B5D7C8662C7DA71B00C5BE45 /* Helper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B5D7C8372C7D89A600C5BE45 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8382C7D89BF00C5BE45 /* TopBar.swift */,
+				B5D7C83A2C7D89EA00C5BE45 /* TopBar.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		B5D7C8502C7D9A6800C5BE45 /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8512C7D9A7700C5BE45 /* Fonts.swift */,
+			);
+			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
+		B5D7C85C2C7D9B7600C5BE45 /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8532C7D9B7600C5BE45 /* Ubuntu-Bold.ttf */,
+				B5D7C8542C7D9B7600C5BE45 /* Ubuntu-BoldItalic.ttf */,
+				B5D7C8552C7D9B7600C5BE45 /* Ubuntu-Italic.ttf */,
+				B5D7C8562C7D9B7600C5BE45 /* Ubuntu-Light.ttf */,
+				B5D7C8572C7D9B7600C5BE45 /* Ubuntu-LightItalic.ttf */,
+				B5D7C8582C7D9B7600C5BE45 /* Ubuntu-Medium.ttf */,
+				B5D7C8592C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf */,
+				B5D7C85A2C7D9B7600C5BE45 /* Ubuntu-Regular.ttf */,
+				B5D7C85B2C7D9B7600C5BE45 /* UFL.txt */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		B5D7C8682C7DAC5300C5BE45 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				B501DBE42C7F12AC0090BB98 /* Inter-Bold.otf */,
+				B501DBE62C7F12AC0090BB98 /* Inter-Medium.otf */,
+				B501DBE52C7F12AC0090BB98 /* Inter-Regular.otf */,
+				B501DBE72C7F12AC0090BB98 /* Inter-SemiBold.otf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		B5D7C86B2C7DB41E00C5BE45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C86C2C7DB42D00C5BE45 /* Currency.swift */,
+				B501DBF12C7F19E70090BB98 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D7C86E2C7DB6C300C5BE45 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C86F2C7DB6CA00C5BE45 /* Dashboard */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		B5D7C86F2C7DB6CA00C5BE45 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B501DBEC2C7F149B0090BB98 /* transactionTableViewCell */,
+				B5D7C87C2C7DD91D00C5BE45 /* addCurrencyCollectionViewCell */,
+				B5D7C8702C7DB6D400C5BE45 /* CurrencyCollectionViewCell */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B5D7C8702C7DB6D400C5BE45 /* CurrencyCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8712C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift */,
+				B5D7C8722C7DB6F400C5BE45 /* CurrencyCollectionViewCell.xib */,
+			);
+			path = CurrencyCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B5D7C8772C7DBFAF00C5BE45 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C8342C7D897400C5BE45 /* DashboardVC.swift */,
+				B5D7C8782C7DBFC700C5BE45 /* DashboardVC+Delegate.swift */,
+				B5D7C87A2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B5D7C87C2C7DD91D00C5BE45 /* addCurrencyCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C87D2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.swift */,
+				B5D7C87E2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.xib */,
+			);
+			path = addCurrencyCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +422,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7C87F2C7DD93500C5BE45 /* addCurrencyCollectionViewCell.xib in Resources */,
+				B5D7C8642C7D9B7600C5BE45 /* Ubuntu-Regular.ttf in Resources */,
+				B5D7C85D2C7D9B7600C5BE45 /* Ubuntu-Bold.ttf in Resources */,
+				B5D7C8652C7D9B7600C5BE45 /* UFL.txt in Resources */,
 				B5D7C80D2C7D88F600C5BE45 /* Assets.xcassets in Resources */,
+				B501DBE82C7F12AC0090BB98 /* Inter-Bold.otf in Resources */,
+				B501DBE92C7F12AC0090BB98 /* Inter-Regular.otf in Resources */,
+				B501DBEA2C7F12AC0090BB98 /* Inter-Medium.otf in Resources */,
+				B5D7C85E2C7D9B7600C5BE45 /* Ubuntu-BoldItalic.ttf in Resources */,
+				B5D7C85F2C7D9B7600C5BE45 /* Ubuntu-Italic.ttf in Resources */,
+				B5D7C8612C7D9B7600C5BE45 /* Ubuntu-LightItalic.ttf in Resources */,
+				B5D7C8732C7DB6F400C5BE45 /* CurrencyCollectionViewCell.xib in Resources */,
+				B5D7C8602C7D9B7600C5BE45 /* Ubuntu-Light.ttf in Resources */,
+				B5D7C8622C7D9B7600C5BE45 /* Ubuntu-Medium.ttf in Resources */,
 				B5D7C8102C7D88F600C5BE45 /* Base in Resources */,
 				B5D7C80B2C7D88F500C5BE45 /* Base in Resources */,
+				B5D7C83B2C7D89EA00C5BE45 /* TopBar.xib in Resources */,
+				B5D7C8632C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf in Resources */,
+				B501DBEF2C7F14C40090BB98 /* transactionTableViewCell.xib in Resources */,
+				B501DBEB2C7F12AC0090BB98 /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +466,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D7C8082C7D88F500C5BE45 /* ViewController.swift in Sources */,
+				B5D7C86D2C7DB42D00C5BE45 /* Currency.swift in Sources */,
+				B5D7C83F2C7D8B1D00C5BE45 /* Other+Extensions.swift in Sources */,
 				B5D7C8042C7D88F500C5BE45 /* AppDelegate.swift in Sources */,
+				B5D7C8522C7D9A7700C5BE45 /* Fonts.swift in Sources */,
+				B5D7C8792C7DBFC700C5BE45 /* DashboardVC+Delegate.swift in Sources */,
+				B5D7C83D2C7D8AF000C5BE45 /* DeviceVariants.swift in Sources */,
+				B5D7C87B2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift in Sources */,
+				B5D7C8352C7D897400C5BE45 /* DashboardVC.swift in Sources */,
+				B5D7C8742C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift in Sources */,
 				B5D7C8062C7D88F500C5BE45 /* SceneDelegate.swift in Sources */,
+				B501DBF02C7F14C40090BB98 /* transactionTableViewCell.swift in Sources */,
+				B5D7C8802C7DD93500C5BE45 /* addCurrencyCollectionViewCell.swift in Sources */,
+				B5D7C8392C7D89BF00C5BE45 /* TopBar.swift in Sources */,
+				B5D7C8672C7DA71B00C5BE45 /* Helper.swift in Sources */,
+				B501DBF22C7F19E70090BB98 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +669,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +697,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

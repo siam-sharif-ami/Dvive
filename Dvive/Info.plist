@@ -21,5 +21,16 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Ubuntu-Bold.ttf</string>
+		<string>Ubuntu-BoldItalic.ttf</string>
+		<string>Ubuntu-Medium.ttf</string>
+		<string>Ubuntu-Regular.ttf</string>
+		<string>Inter-Bold.otf</string>
+		<string>Inter-Medium.otf</string>
+		<string>Inter-Regular.otf</string>
+		<string>Inter-SemiBold.otf</string>
+	</array>
 </dict>
 </plist>
