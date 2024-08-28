@@ -14,6 +14,9 @@
 		B501DBEF2C7F14C40090BB98 /* transactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */; };
 		B501DBF02C7F14C40090BB98 /* transactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBED2C7F14C40090BB98 /* transactionTableViewCell.swift */; };
 		B501DBF22C7F19E70090BB98 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBF12C7F19E70090BB98 /* Transaction.swift */; };
+		B501DBF62C7F340D0090BB98 /* accountCentreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501DBF52C7F340D0090BB98 /* accountCentreTableViewCell.xib */; };
+		B501DBF72C7F340D0090BB98 /* accountCentreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBF42C7F340D0090BB98 /* accountCentreTableViewCell.swift */; };
+		B501DBF92C7F371A0090BB98 /* AccountCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501DBF82C7F371A0090BB98 /* AccountCentre.swift */; };
 		B5D7C8042C7D88F500C5BE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8032C7D88F500C5BE45 /* AppDelegate.swift */; };
 		B5D7C8062C7D88F500C5BE45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C8052C7D88F500C5BE45 /* SceneDelegate.swift */; };
 		B5D7C80B2C7D88F500C5BE45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B5D7C80A2C7D88F500C5BE45 /* Base */; };
@@ -72,6 +75,9 @@
 		B501DBED2C7F14C40090BB98 /* transactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionTableViewCell.swift; sourceTree = "<group>"; };
 		B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transactionTableViewCell.xib; sourceTree = "<group>"; };
 		B501DBF12C7F19E70090BB98 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B501DBF42C7F340D0090BB98 /* accountCentreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountCentreTableViewCell.swift; sourceTree = "<group>"; };
+		B501DBF52C7F340D0090BB98 /* accountCentreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = accountCentreTableViewCell.xib; sourceTree = "<group>"; };
+		B501DBF82C7F371A0090BB98 /* AccountCentre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCentre.swift; sourceTree = "<group>"; };
 		B5D7C8002C7D88F500C5BE45 /* Dvive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dvive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C8032C7D88F500C5BE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5D7C8052C7D88F500C5BE45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +147,15 @@
 				B501DBEE2C7F14C40090BB98 /* transactionTableViewCell.xib */,
 			);
 			path = transactionTableViewCell;
+			sourceTree = "<group>";
+		};
+		B501DBF32C7F33F70090BB98 /* Account Centre */ = {
+			isa = PBXGroup;
+			children = (
+				B501DBF42C7F340D0090BB98 /* accountCentreTableViewCell.swift */,
+				B501DBF52C7F340D0090BB98 /* accountCentreTableViewCell.xib */,
+			);
+			path = "Account Centre";
 			sourceTree = "<group>";
 		};
 		B5D7C7F72C7D88F500C5BE45 = {
@@ -268,6 +283,7 @@
 			children = (
 				B5D7C86C2C7DB42D00C5BE45 /* Currency.swift */,
 				B501DBF12C7F19E70090BB98 /* Transaction.swift */,
+				B501DBF82C7F371A0090BB98 /* AccountCentre.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +299,7 @@
 		B5D7C86F2C7DB6CA00C5BE45 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				B501DBF32C7F33F70090BB98 /* Account Centre */,
 				B501DBEC2C7F149B0090BB98 /* transactionTableViewCell */,
 				B5D7C87C2C7DD91D00C5BE45 /* addCurrencyCollectionViewCell */,
 				B5D7C8702C7DB6D400C5BE45 /* CurrencyCollectionViewCell */,
@@ -437,6 +454,7 @@
 				B5D7C8602C7D9B7600C5BE45 /* Ubuntu-Light.ttf in Resources */,
 				B5D7C8622C7D9B7600C5BE45 /* Ubuntu-Medium.ttf in Resources */,
 				B5D7C8102C7D88F600C5BE45 /* Base in Resources */,
+				B501DBF62C7F340D0090BB98 /* accountCentreTableViewCell.xib in Resources */,
 				B5D7C80B2C7D88F500C5BE45 /* Base in Resources */,
 				B5D7C83B2C7D89EA00C5BE45 /* TopBar.xib in Resources */,
 				B5D7C8632C7D9B7600C5BE45 /* Ubuntu-MediumItalic.ttf in Resources */,
@@ -471,9 +489,11 @@
 				B5D7C8042C7D88F500C5BE45 /* AppDelegate.swift in Sources */,
 				B5D7C8522C7D9A7700C5BE45 /* Fonts.swift in Sources */,
 				B5D7C8792C7DBFC700C5BE45 /* DashboardVC+Delegate.swift in Sources */,
+				B501DBF92C7F371A0090BB98 /* AccountCentre.swift in Sources */,
 				B5D7C83D2C7D8AF000C5BE45 /* DeviceVariants.swift in Sources */,
 				B5D7C87B2C7DBFD300C5BE45 /* DashboardVC+Datasource.swift in Sources */,
 				B5D7C8352C7D897400C5BE45 /* DashboardVC.swift in Sources */,
+				B501DBF72C7F340D0090BB98 /* accountCentreTableViewCell.swift in Sources */,
 				B5D7C8742C7DB6F400C5BE45 /* CurrencyCollectionViewCell.swift in Sources */,
 				B5D7C8062C7D88F500C5BE45 /* SceneDelegate.swift in Sources */,
 				B501DBF02C7F14C40090BB98 /* transactionTableViewCell.swift in Sources */,

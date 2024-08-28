@@ -20,7 +20,13 @@ extension DashboardVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLay
 
 extension DashboardVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        getContentHeightWithRespectToDevice(contentHeight: 70)
+        if tableView == transactionTableView {
+            return getContentHeightWithRespectToDevice(contentHeight: 70)
+        }else if tableView == accountCentreTableView {
+            return getContentHeightWithRespectToDevice(contentHeight: 100)
+        }else {
+            return 50
+        }
     }
     
 }

@@ -18,13 +18,17 @@ class DashboardVC: UIViewController {
     
     @IBOutlet weak var currencyCollectionViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var globalAccountCentreLabel: UILabel!
     @IBOutlet weak var transactionTableView: UITableView!
     @IBOutlet weak var recentTransactionsLabel: UILabel!
     @IBOutlet weak var seeAll: UILabel!
     
+    @IBOutlet weak var globalAccountSeeAll: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var transactionTableViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var accountCentreTableViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var accountCentreTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,16 +53,21 @@ class DashboardVC: UIViewController {
         transactionTableView.delegate = self
         transactionTableView.dataSource = self
         
+        accountCentreTableView.delegate = self
+        accountCentreTableView.dataSource = self
+        
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         currencyCollectionView.layer.removeAllAnimations()
         transactionTableView.layer.removeAllAnimations()
-        
+        accountCentreTableView.layer.removeAllAnimations()
         
         currencyCollectionViewHeight.constant = currencyCollectionView.contentSize.height
         transactionTableViewHeight.constant =
         transactionTableView.contentSize.height
+        accountCentreTableViewHeight.constant = accountCentreTableView.contentSize.height
+        
         UIView.animate(withDuration: 0.5) {
             self.updateViewConstraints()
         }
@@ -71,6 +80,7 @@ class DashboardVC: UIViewController {
         currencyCollectionView.register(UINib(nibName: "addCurrencyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "addCurrencyCollectionViewCell")
         
         transactionTableView.register(UINib(nibName: "transactionTableViewCell", bundle: nil), forCellReuseIdentifier: "transactionTableViewCell")
+        accountCentreTableView.register(UINib(nibName: "accountCentreTableViewCell", bundle: nil), forCellReuseIdentifier: "accountCentreTableViewCell")
     }
     
     func setupFontsAndTextSizes(){
@@ -80,6 +90,11 @@ class DashboardVC: UIViewController {
         seeAll.attributedText = Helper().getUnderlinedText(text: "See all")
         seeAll.font = UIFont(name: Fonts.Inter.medium, size: 14)
         seeAll.textColor = Helper().customOrangeColor
+        
+        globalAccountCentreLabel.font = UIFont(name: Fonts.Inter.semiBold, size: 20)
+        globalAccountSeeAll.font = UIFont(name: Fonts.Inter.semiBold, size: 14)
+        globalAccountSeeAll.attributedText = Helper().getUnderlinedText(text: "See all")
+        globalAccountSeeAll.textColor = Helper().customOrangeColor
     }
     
     func setupHeightsConstraints(){

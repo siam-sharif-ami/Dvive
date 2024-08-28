@@ -146,22 +146,61 @@
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-kk-T5C">
-                                                <rect key="frame" x="76" y="492" width="240" height="68"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9W9-gi-gn4">
+                                                <rect key="frame" x="0.0" y="480" width="393" height="179"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="179" id="Dwe-c6-10O"/>
+                                                </constraints>
+                                                <view key="tableHeaderView" contentMode="scaleToFill" id="8MT-LP-XSc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="53"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Account Centre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-kJ-QZg">
+                                                            <rect key="frame" x="19" y="16" width="172" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0on-xt-pU0">
+                                                            <rect key="frame" x="329" y="16" width="50" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="0on-xt-pU0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NwZ-kJ-QZg" secondAttribute="trailing" constant="30" id="ADO-3X-AGc"/>
+                                                        <constraint firstItem="0on-xt-pU0" firstAttribute="bottom" secondItem="NwZ-kJ-QZg" secondAttribute="bottom" id="KfS-le-PIZ"/>
+                                                        <constraint firstItem="NwZ-kJ-QZg" firstAttribute="leading" secondItem="8MT-LP-XSc" secondAttribute="leading" constant="19" id="Oai-Fu-VSB"/>
+                                                        <constraint firstItem="0on-xt-pU0" firstAttribute="centerY" secondItem="8MT-LP-XSc" secondAttribute="centerY" id="SsM-cq-Lj4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0on-xt-pU0" secondAttribute="trailing" constant="14" id="qRM-bc-NCv"/>
+                                                    </constraints>
+                                                </view>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="N7d-bg-8Sj">
+                                                        <rect key="frame" x="0.0" y="103" width="393" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N7d-bg-8Sj" id="KAl-in-rE4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="K9U-Tz-XBb" firstAttribute="top" secondItem="RfH-1X-Eof" secondAttribute="top" id="2Is-gH-QLQ"/>
-                                            <constraint firstItem="FdO-kk-T5C" firstAttribute="top" secondItem="T2p-LQ-lNI" secondAttribute="bottom" constant="17" id="8xw-dP-esd"/>
-                                            <constraint firstItem="FdO-kk-T5C" firstAttribute="leading" secondItem="RfH-1X-Eof" secondAttribute="leading" constant="76" id="CdV-oP-rla"/>
+                                            <constraint firstItem="9W9-gi-gn4" firstAttribute="top" secondItem="T2p-LQ-lNI" secondAttribute="bottom" constant="5" id="4pa-xw-7Ir"/>
+                                            <constraint firstAttribute="trailing" secondItem="9W9-gi-gn4" secondAttribute="trailing" id="74R-fH-H75"/>
+                                            <constraint firstItem="9W9-gi-gn4" firstAttribute="leading" secondItem="RfH-1X-Eof" secondAttribute="leading" id="Fat-H8-i7F"/>
                                             <constraint firstItem="K9U-Tz-XBb" firstAttribute="leading" secondItem="RfH-1X-Eof" secondAttribute="leading" id="Ht3-ND-boJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="FdO-kk-T5C" secondAttribute="bottom" constant="104" id="JBc-Rd-pBj"/>
                                             <constraint firstAttribute="trailing" secondItem="K9U-Tz-XBb" secondAttribute="trailing" id="Xdy-Ri-eAy"/>
-                                            <constraint firstAttribute="trailing" secondItem="FdO-kk-T5C" secondAttribute="trailing" constant="77" id="YOs-lX-1YP"/>
                                             <constraint firstAttribute="trailing" secondItem="T2p-LQ-lNI" secondAttribute="trailing" id="aII-tZ-TFq"/>
                                             <constraint firstItem="T2p-LQ-lNI" firstAttribute="top" secondItem="K9U-Tz-XBb" secondAttribute="bottom" constant="5" id="eFX-8M-2Jb"/>
+                                            <constraint firstAttribute="bottom" secondItem="9W9-gi-gn4" secondAttribute="bottom" constant="5" id="ie4-rC-XdW"/>
                                             <constraint firstItem="T2p-LQ-lNI" firstAttribute="leading" secondItem="RfH-1X-Eof" secondAttribute="leading" id="kMl-9Q-YAF"/>
                                         </constraints>
                                     </view>
@@ -192,10 +231,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="accountCentreTableView" destination="9W9-gi-gn4" id="tEd-kP-gwo"/>
+                        <outlet property="accountCentreTableViewHeight" destination="Dwe-c6-10O" id="QTl-5j-xgU"/>
                         <outlet property="balanceLabel" destination="NeW-8u-drV" id="GaW-DZ-Brx"/>
                         <outlet property="balanceViewHeight" destination="qQZ-Kt-CIS" id="48V-4a-cn5"/>
                         <outlet property="currencyCollectionView" destination="K9U-Tz-XBb" id="MCV-VE-PVK"/>
                         <outlet property="currencyCollectionViewHeight" destination="z4E-qT-rsk" id="oq8-jp-IxS"/>
+                        <outlet property="globalAccountCentreLabel" destination="NwZ-kJ-QZg" id="oeT-b7-grv"/>
+                        <outlet property="globalAccountSeeAll" destination="0on-xt-pU0" id="CTx-Sq-pBh"/>
                         <outlet property="recentTransactionsLabel" destination="NfS-f9-ymx" id="h1f-Wb-AS4"/>
                         <outlet property="scrollView" destination="Ru7-pO-lhS" id="KfW-z7-cJq"/>
                         <outlet property="seeAll" destination="tii-pp-pIF" id="aKF-Ls-kgo"/>

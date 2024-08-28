@@ -37,20 +37,42 @@ extension DashboardVC: UICollectionViewDataSource {
 
 extension DashboardVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listOfTransactions.count
+        if tableView == transactionTableView {
+            return listOfTransactions.count
+        }else if tableView == accountCentreTableView {
+            return listOfAccounts.count
+        }else {
+            return 1
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "transactionTableViewCell", for: indexPath) as? transactionTableViewCell else { return UITableViewCell.init() }
-        cell.iconImageView.image = UIImage(named:listOfTransactions[indexPath.row].icon ?? "")
-        cell.balanceHeader.attributedText = Helper().getAmountWithBaselineOffset(text: listOfTransactions[indexPath.row].amountHeader ?? "", transactionType: listOfTransactions[indexPath.row].transactionType ?? "", currencyType: listOfTransactions[indexPath.row].currencyType ?? "")
-        cell.transactionHeader.text = listOfTransactions[indexPath.row].header
-        cell.transactionTrailer.text = listOfTransactions[indexPath.row].footer
         
-        if listOfTransactions[indexPath.row].transactionType == "debit"{
-            cell.balanceHeader.textColor = Helper().customOrangeColor
+        if tableView == transactionTableView {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "transactionTableViewCell", for: indexPath) as? transactionTableViewCell else { return UITableViewCell.init() }
+            cell.iconImageView.image = UIImage(named:listOfTransactions[indexPath.row].icon ?? "")
+            cell.balanceHeader.attributedText = Helper().getAmountWithBaselineOffset(text: listOfTransactions[indexPath.row].amountHeader ?? "", transactionType: listOfTransactions[indexPath.row].transactionType ?? "", currencyType: listOfTransactions[indexPath.row].currencyType ?? "")
+            cell.transactionHeader.text = listOfTransactions[indexPath.row].header
+            cell.transactionTrailer.text = listOfTransactions[indexPath.row].footer
+            
+            if listOfTransactions[indexPath.row].transactionType == "debit"{
+                cell.balanceHeader.textColor = Helper().customOrangeColor
+            }else {
+                cell.balanceHeader.textColor = .systemGreen
+            }
+            return cell
+        }else if tableView == accountCentreTableView {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "accountCentreTableViewCell", for: indexPath) as? accountCentreTableViewCell else { return UITableViewCell.init() }
+            cell.iconImage.image = UIImage(named: listOfAccounts[indexPath.row].currencyIcon ?? "")
+            cell.rightIcon.image = UIImage(named: listOfAccounts[indexPath.row].rightIcon ?? "")
+            cell.titleHeader.text = listOfAccounts[indexPath.row].accountType
+            cell.titleFooter.text = listOfAccounts[indexPath.row].description
+            cell.titleHeader.font = UIFont(name: Fonts.Inter.medium, size: 14)
+            cell.titleFooter.font = UIFont(name: Fonts.Inter.regular, size: 12)
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            return cell
         }else {
-            cell.balanceHeader.textColor = .systemGreen
+            return UITableViewCell.init()
         }
-        return cell
     }
 }
